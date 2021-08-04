@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Lexend Deca", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-size: 15px;
+  /* color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* header {
+  background: black; 
+   background-color: hsl(277, 64%, 61%);
+  background: -moz-linear-gradient(
+    rgba(0, 0, 0, 0) 50%,
+    hsl(277, 64%, 61%) 100%
+  );
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+} */
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding: 0;
+  /* z-index: -1; */
+  /* background-color: blue; */
+  opacity: 0.5;
+  /* background-color: hsl(277, 64%, 61%); */
+  /* background: linear-gradient(hsl(277, 64%, 61%)); */
+}
+
+.test-main-component {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* padding: px; */
+  /*padding: 15px;*/
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 15px;
+  line-height: 1.8;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.test-component p {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin: 0;
+}
+
+.test-component {
+  margin: 10px;
+}
+
+.test-component p:last-child {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 855px) {
+  .test-main-component {
+    /* display: inline-flexbox; */
+    max-width: 960px;
+    flex-direction: row-reverse;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+  }
+
+  .test-text-component {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    /* align-content: space-around; */
+    margin: 5em;
+  }
+
+  .test-nums-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: baseline;
+    /* margin-right: 10em; */
+  }
+
+  #test-paragraph {
+    margin-top: 2em;
+  }
+
+  .test-component,
+  p {
+    margin: 0;
+  }
+
+  .test-component {
+    margin: 5em 5em 0 0;
+  }
+
+  img {
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    /* width: 100%; */
+  }
+}
